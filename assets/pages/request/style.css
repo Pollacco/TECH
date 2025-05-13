@@ -267,7 +267,9 @@ input[type="file"]::file-selector-button {
   }
   
   .nav_link {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
     font-size: 17px;
     text-transform: uppercase;
   }

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -19,18 +19,21 @@ a {
   text-decoration: none;
 }
 
-h1, h3, h4 {
-  font-family: 'Open Sans', sans-serif;
+h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
   margin: 0;
   padding: 0;
+  color: #565759;
 }
 
-h2 {
-  font-family: 'Open Sans', sans-serif;
+h2, h3, h4 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
   margin: 0;
   padding: 0;
-  color: #fff;
-  font-weight: 400;
 }
 
 p {
@@ -57,12 +60,16 @@ header {
 
 .logo {
   display: flex;
-  align-items: center;
-  
+  align-items: center;  
+  cursor: pointer;
+}
+.logo_description {
+  font-size: 12px;
+  color: #565759;
 }
 
 .logo_name {
-  margin-left: 15px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,9 +85,13 @@ nav {
 }
 
 .nav_link {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   text-transform: uppercase;
+  color: rgb(31, 31, 31);
+  cursor: pointer;
+
 }
 
 .fast {
