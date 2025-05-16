@@ -21,11 +21,12 @@ a {
 
 h1 {
   font-family: Roboto, sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 500;
   margin: 0;
   padding: 0;
   color: #565759;
+  text-transform: uppercase;
 }
 
 h2, h3, h4 {
@@ -43,16 +44,19 @@ p {
 
 header {
   width: 100%;
-  height: 100px;
+  height: 70px;
+-webkit-box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
+-moz-box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
+box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
 }
 
 .header_wrapper {
   margin: 0 auto;
   max-width: 1200px;
-  padding-top: 13px;
 }
 
 .header {
+  padding-top: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,7 +73,7 @@ header {
 }
 
 .logo_name {
-  margin-left: 20px;
+  margin-left: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,13 +89,12 @@ nav {
 }
 
 .nav_link {
+  font-size: 15px;
   font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 600;  
   text-transform: uppercase;
   color: rgb(31, 31, 31);
   cursor: pointer;
-
 }
 
 .fast {
@@ -591,8 +594,7 @@ nav {
 
 footer {
   width: 100%;
-  background-color: rgb(39, 39, 39);
-
+  background-color: #f6fbff;
 }
 
 .footer_wrapper {
@@ -608,21 +610,64 @@ footer {
 }
 
 .footer_item {
-  width: 255px;
+  width: 300px;
 }
 
 .footer_item_titile {
-  color: grey;
-  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0095da;
+  border-bottom: 1px solid grey;
   padding-bottom: 20px;
   margin-bottom: 25px;
 }
 
+.phone_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mail_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.location_container {
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone_container span{
+  margin-left: 10px;
+}
+
+.mail_container span {
+  margin-left: 10px;
+}
+
+.location_container span {
+  margin-left: 10px;
+
+}
+
 .footer_item p {
-  color: grey;
+  color: #222;
   margin-top: 15px;
   text-align: justify;
   font-size: 15px;
+}
+
+.footer_nav_link {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;  
+  text-transform: uppercase;
+  color: rgb(31, 31, 31);
+  cursor: pointer;
 }
 
 .bottom_wrapper {
@@ -633,7 +678,7 @@ footer {
 
 .bottom {
   width: 100%;
-  background-color: #1f1f1f;
+  background-color: #f6fbff;
 }
 
 .bottom_layout {
@@ -642,7 +687,7 @@ footer {
 }
 
 .bottom p{
-  color: grey;
+  color: #222;
   margin-top: 15px;
   text-align: justify;
   font-size: 15px;
