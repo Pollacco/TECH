@@ -601,7 +601,6 @@ footer {
   margin: 0 auto;
   max-width: 1200px;
   padding-top: 85px;
-  padding-bottom: 85px;
 }
 
 .footer_layout {
@@ -629,6 +628,7 @@ footer {
 }
 
 .mail_container{
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -668,6 +668,45 @@ footer {
   text-transform: uppercase;
   color: rgb(31, 31, 31);
   cursor: pointer;
+}
+
+.socials_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials_item {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 7px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.socials_item:hover {
+  border: 1px solid #106EA9;
+  transition: all ease 0.3s;
+
+}
+
+.socials_item object {
+  border-radius: 50%;
+  border: 5px solid transparent;
+}
+
+.socials_item object:hover{
+filter: brightness(0) saturate(100%) invert(21%) sepia(75%) saturate(3084%) hue-rotate(187deg) brightness(96%) contrast(87%);  transition: 0.3s;
 }
 
 .bottom_wrapper {
