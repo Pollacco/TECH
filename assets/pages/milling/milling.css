@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: #565759;
+  text-transform: uppercase;
+}
+
+h2, h3, h4 {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+-webkit-box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
+-moz-box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
+box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
+}
+
+.header_wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header {
+  padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;  
+  cursor: pointer;
+}
+.logo_description {
+  font-size: 12px;
+  color: #565759;
+}
+
+.logo_name {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  width: 600px;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_link {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;  
+  text-transform: uppercase;
+  color: rgb(31, 31, 31);
+  cursor: pointer;
+}
+
+.fast {
+  background: #0095da;
+  padding: 15px 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.milling {
+  width: 100%;
+}
+
+.milling_wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.milling_header{
+    text-align: center;
+}
+
+.milling_description {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.milling_text {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+.milling_tech {
+    margin-top: 30px;
+}
+
+.milling_process_wrap{
+    align-items: center;
+    justify-content: center;
+}
+
+.milling_process {
+    margin-top: 30px;
+}
+
+.axis {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  background-color: #f6fbff;
+}
+
+.footer_wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-top: 85px;
+}
+
+.footer_layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_item {
+  width: 300px;
+}
+
+.footer_item_titile {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0095da;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.phone_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mail_container{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.location_container {
+  margin-top: 10px;
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone_container span{
+  margin-left: 10px;
+}
+
+.mail_container span {
+  margin-left: 10px;
+}
+
+.location_container span {
+  margin-left: 10px;
+
+}
+
+.footer_item p {
+  color: #222;
+  margin-top: 15px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.footer_nav_link {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;  
+  text-transform: uppercase;
+  color: rgb(31, 31, 31);
+  cursor: pointer;
+}
+
+.socials_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+}
+
+.socials object:not(:first-child){
+  margin-top: 10px;
+}
+
+.socials object:hover {
+  cursor: pointer;
+}
+
+.socials object:hover {
+  fill: #0095da;
+  transition: 500ms;
+  transition-timing-function: ease-in-out;
+}
+
+
+.bottom_wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px 0;
+}
+
+.telegram,
+.vk,
+.yt {
+  display: flex;
+  flex-direction: row;
+}
+
+.vk, .yt {
+  margin-top: 10px;  
+}
+
+.telegram span,
+.vk span,
+.yt span {
+  margin-left: 10px;
+}
+
+.bottom {
+  width: 100%;
+  background-color: #f6fbff;
+}
+
+.bottom_layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom p{
+  color: #222;
+  margin-top: 15px;
+  text-align: justify;
+  font-size: 15px;
+}
