@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
-<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
-	<path d="M 81.532 90 H 8.468 C 3.791 90 0 86.209 0 81.532 V 8.468 C 0 3.791 3.791 0 8.468 0 h 73.063 C 86.209 0 90 3.791 90 8.468 v 73.063 C 90 86.209 86.209 90 81.532 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-	<path d="M 70.084 20.998 l -51.376 19.81 c -3.507 1.407 -3.486 3.363 -0.639 4.235 l 13.182 4.115 l 4.534 14.921 c 0.596 1.645 0.302 2.298 2.03 2.298 c 1.333 0 1.922 -0.61 2.667 -1.333 l 6.406 -6.229 l 13.328 9.847 c 2.453 1.353 4.223 0.652 4.834 -2.277 l 8.749 -41.23 C 74.695 21.562 72.431 19.933 70.084 20.998 z M 42.262 52.598 l -4.388 9.813 l -4.348 -14.309 l 33.469 -19.856 L 42.262 52.598 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(252,253,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" fill="#106EA9" viewBox="0 0 50 50" width="50px" height="50px"><path d="M25,2c12.703,0,23,10.297,23,23S37.703,48,25,48S2,37.703,2,25S12.297,2,25,2z M32.934,34.375 c0.423-1.298,2.405-14.234,2.65-16.783c0.074-0.772-0.17-1.285-0.648-1.514c-0.578-0.278-1.434-0.139-2.427,0.219 c-1.362,0.491-18.774,7.884-19.78,8.312c-0.954,0.405-1.856,0.847-1.856,1.487c0,0.45,0.267,0.703,1.003,0.966 c0.766,0.273,2.695,0.858,3.834,1.172c1.097,0.303,2.346,0.04,3.046-0.395c0.742-0.461,9.305-6.191,9.92-6.693 c0.614-0.502,1.104,0.141,0.602,0.644c-0.502,0.502-6.38,6.207-7.155,6.997c-0.941,0.959-0.273,1.953,0.358,2.351 c0.721,0.454,5.906,3.932,6.687,4.49c0.781,0.558,1.573,0.811,2.298,0.811C32.191,36.439,32.573,35.484,32.934,34.375z"/>
+    <defs>
+  <style>
+    svg{fill: #0095da; transition: 0.34s; cursor: pointer;}
+    svg:hover{ fill: #106EA9;}
+ </style>
+</defs> 
 </svg>

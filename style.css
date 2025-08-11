@@ -98,7 +98,7 @@ nav {
 }
 
 .fast {
-  background: #106EA9;
+  background: #0095da;
   padding: 15px 30px;
   border-radius: 5px;
   color: #fff;
@@ -264,7 +264,7 @@ nav {
 
 .video {
   width: 100%;
-  background-color: #f2f6f8;
+  background-color: #f6fbff;
 }
 
 .video_wrapper {
@@ -372,7 +372,7 @@ nav {
 
 .trust {
   width: 100%;
-  background-color: #f2f6f8;
+  background-color: #f6fbff;
 }
 
 .trust_wrapper {
@@ -480,7 +480,7 @@ nav {
 
 .who {
   padding: 25px;
-  background-color: #f2f6f8;
+  background-color: #f6fbff;
   display: flex;
 }
 
@@ -501,7 +501,7 @@ nav {
 
 .steps {
   width: 100%;
-  background-color: #f2f6f8;
+  background-color: #f6fbff;
 }
 
 .steps_wrapper{
@@ -548,7 +548,7 @@ nav {
 
 .steps_button {
   margin-top: 40px;
-  background: #106EA9;
+  background: #0095da;
   padding: 15px 30px;
   border-radius: 5px;
   color: #fff;
@@ -636,6 +636,7 @@ footer {
 }
 
 .location_container {
+  margin-top: 10px;
     display: flex;
   flex-direction: row;
   align-items: center;
@@ -678,41 +679,45 @@ footer {
 
 .socials {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
-.socials_item {
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  padding: 7px;
-  border-radius: 50%;
-  border: 1px solid #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.socials object:not(:first-child){
+  margin-top: 10px;
+}
+
+.socials object:hover {
   cursor: pointer;
 }
 
-.socials_item:hover {
-  border: 1px solid #106EA9;
-  transition: all ease 0.3s;
-
+.socials object:hover {
+  fill: #0095da;
+  transition: 500ms;
+  transition-timing-function: ease-in-out;
 }
 
-.socials_item object {
-  border-radius: 50%;
-  border: 5px solid transparent;
-}
-
-.socials_item object:hover{
-filter: brightness(0) saturate(100%) invert(21%) sepia(75%) saturate(3084%) hue-rotate(187deg) brightness(96%) contrast(87%);  transition: 0.3s;
-}
 
 .bottom_wrapper {
   margin: 0 auto;
   max-width: 1200px;
   padding: 20px 0;
+}
+
+.telegram,
+.vk,
+.yt {
+  display: flex;
+  flex-direction: row;
+}
+
+.vk, .yt {
+  margin-top: 10px;  
+}
+
+.telegram span,
+.vk span,
+.yt span {
+  margin-left: 10px;
 }
 
 .bottom {
