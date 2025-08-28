@@ -7,11 +7,19 @@
   <link rel="stylesheet" href="style.css">  
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>ООО "Дизельавто"</title>
 </head>
 <body>
   <header>
+    <div class="topper">
+      <div class="topper_wrapper">
+        <div class="topper_contacts">
+          <span>dizelavtomiass@yandex.ru</span>
+          <span>8 800 4444 174</span>          
+        </div>
+      </div>
+    </div>
     <div class="header_wrapper">
       <div class="header">
           <div class="logo">          
@@ -23,7 +31,6 @@
         <nav>
           <ul class="nav_list">
             <li class="nav_item"><a class="nav_link" href="">Обработка металлов</a></li>
-            <li class="nav_item"><a class="nav_link" href="">Инжиниринг</a></li>
             <li class="nav_item"><a class="nav_link" href="">О компании</a></li>
             <li class="nav_item"><a class="nav_link" href="">Контакты</a></li>
           </ul>
@@ -45,24 +52,38 @@
               <div class="slider_wrapper">
                   <div class="slider_item active_slide">
                       <div class="slider_item_image">
-                          <img src="assets/images/turn.jpg" alt="cup of coffe, first slide">
+                          <img src="assets/images/turn.jpg" alt="">
                       </div>                        
                       <h5 class="slider_item_title">Токарная обработка</h5>
-                      <p class="slider_item_description">Тут краткое описание</p>
+                      <p class="slider_item_description">Мы выполняем высокоточную токарную по чертежам заказчика. Обеспечиваем обработку заготовок диаметром до 500 мм и длиной до 1350 мм с точностью до ±0,005 мм. Работаем с любыми металлами, от единичных деталей до серийных партий, гарантируя качество и соблюдение сроков.</p>
                   </div>
                   <div class="slider_item">
                       <div class="slider_item_image">
-                          <img src="assets/images/mill.jpg" alt="cup of coffe, first slide">
+                          <img src="assets/images/mill.jpg" alt="">
                       </div>                        
                       <h5 class="slider_item_title">Фрезерная обработка</h5>
-                      <p class="slider_item_description">Тут краткое описание</p>
+                      <p class="slider_item_description">Мы выполняем 3-, 4- и 5-осевую фрезерную обработку деталей диаметром до 255 мм и габаритами до 1300×700×600 мм с точностью до ±0,005 мм. Обеспечиваем изготовление сложных пространственных форм, серий и единичных изделий, гарантируя качество и соблюдение сроков.</p>
                   </div>
                   <div class="slider_item">
                       <div class="slider_item_image">
-                          <img src="assets/images/slide3.jpg" alt="cup of coffe, first slide">
+                          <img src="assets/images/electro.jpg" alt="">
                       </div>                        
                       <h5 class="slider_item_title">Электроэрозионная обработка</h5>
-                      <p class="slider_item_description">Тут краткое описание</p>
+                      <p class="slider_item_description">Мы выполняем проволочно-вырезную обработку заготовок до 800×500×500 мм и массой до 500 кг с точностью до ±0,005 мм. Изготавливаем детали сложной формы из любых металлов, включая закалённые и твёрдые сплавы.</p>
+                  </div>
+                  <div class="slider_item">
+                      <div class="slider_item_image">
+                          <img src="assets/images/3dprint.jpg" alt="">
+                      </div>                        
+                      <h5 class="slider_item_title">3D Печать</h5>
+                      <p class="slider_item_description">Мы Изготавливаем детали сложной геометрии по 3D-моделям заказчика с областью печати до 350×350×350 мм и точностью до ±0,1 мм. Печатаем из широкого спектра полимеров и композитов, обеспечивая быстрое производство от прототипов до мелких серий.</p>
+                  </div>
+                  <div class="slider_item">
+                      <div class="slider_item_image">
+                          <img src="assets/images/scan.jpg" alt="">
+                      </div>                        
+                      <h5 class="slider_item_title">3D-сканирование</h5>
+                      <p class="slider_item_description">Мы выполняем бесконтактное 3D-сканирование объектов от 10 мм до 5 м с точностью до 0,02 мм. Создаём цифровые модели для восстановления, модернизации, контроля качества и подготовки к производству.</p>
                   </div>
               </div>               
               <div class="right_arrow">
@@ -78,23 +99,55 @@
           </div>
     </section>
     <section class="about">
-      <div class="about_wrapper">
+      <div class="about_bg">
+        <div class="about_wrapper">
         <div class="about_contetnt">
           <h2 class="about_title">Производство и НИОКР</h2>
           <div class="about_product">
             <div class="processing">
-              <p class="about_description">Компания «Дизельавто» предоставляет услуги по механической обработке металлов, включающими токарную, фрезерную и электроэрозионную обработку. На токарных станках мы выполняем операции по обработке цилиндрических и конических поверхностей, нарезке резьбы, сверлению, развертыванию отверстий и другим видам обработки габаритами до 250 мм диаметром и длинной 1500 мм. На фрезерных станках фрезеруем плоские, ступенчатые, угловые и фасонные поверхности, изготавливаем канавки, пазы, шлицы, фаски, нарезаем зубчатые колеса и выполняем сверление и растачивание отверстий.</p>
-              <div class="about_img_right"><img class="about_product" src="assets/images/prossesing.jpg" alt="" width="500" height="300"></div>              
+              <div class="process_main">
+                <p class="about_description">ООО «Дизельавто» выполняет механическую обработку металлов и пластмасс, проводит научно-исследовательские и опытно-конструкторские работы (НИОКР), а также работы с применением технологий 3D-печати и 3D-сканирования.</p>
+              <h3 class="about_subtitle">Механическая обработка</h3>
+              <ol>
+                <li><strong>Токарная обработка:</strong> цилиндрические и конические поверхности, нарезка наружной и внутренней резьбы, сверление, развертывание отверстий; максимальный диаметр — 250 мм, максимальная длина — 1500 мм.</li>
+                <li><strong>Фрезерная обработка:</strong> плоские, ступенчатые, угловые и фасонные поверхности, канавки, пазы, шлицы, фаски, нарезка зубчатых колёс, сверление и растачивание отверстий.</li>
+                <li><strong>Электроэрозионная обработка:</strong> высокоточная обработка сложнопрофильных деталей.</li>
+                <li><strong>Обработка пластмасс:</strong> токарная и фрезерная обработка изделий из технических пластиков (ПОМ, ПТФЭ, ПЭ, ПА и др.).</li>
+              </ol>
+              </div>              
+              <div class="about_img_right"><img class="about_product" src="assets/images/prossesing.jpg" alt=""></div>              
             </div>
-            <div class="research">
-              <p class="about_description">«Дизельавто» занимается научно-исследовательскими конструкторскими разработками (НИОКР). Мы разрабатываем  техническую документацию для новых изделий, модернизации текущих, в том числе используя реверс инжиниринг. Наши конструкторы работают в связке с технологами, которые определяют наилучшие способы изготовления изделий, выбирают оптимальные материалы и инструменты, разрабатывают технологическую документацию и контролируют качество продукции. Благодаря их усилиям, мы внедряем новые технологии в производство, повышая эффективность процессов. Мы предоставляем услуги в области реверс инжиниринга, импортозамещения, а также для разработки и изготовления как единичных, так и опытно-серийных и серийных образцов, под ваши нужды.</p>
-              <div class="about_img_left"><img class="about_product" src="assets/images/development.jpg" alt="" width="500" height="300"></div>     
+            <div class="about_text">
+              <h3 class="about_subtitle">Аддитивные технологии</h3>
+              <ol>
+                <li><strong>3D-печать:</strong> изготовление деталей из пластика (PLA, ABS, PETG, нейлон, композитные материалы) методом FDM и SLA; размеры печати — до 300×300×400 мм.</li>
+                <li><strong>3D-сканирование:</strong> цифровизация изделий с точностью до 0,05 мм для последующего реверс-инжиниринга или контроля качества.</li>
+              </ol>
+              <h3 class="about_subtitle">НИОКР</h3>
+              <ol>
+                <li>Разработка конструкторской документации для новых изделий.</li>
+                <li>Модернизация существующих изделий.</li>
+                <li>Реверс-инжиниринг.</li>
+                <li>Разработка технологической документации.</li>
+                <li>Подбор материалов и инструмента.</li>
+              </ol>
+              <h3 class="about_subtitle">Виды производства</h3>
+                <ol>
+                  <li>Единичное.</li>
+                  <li>Опытно-серийное.</li>
+                  <li>Серийное.</li>
+                </ol>
+              <h3 class="about_subtitle">Дополнительные направления</h3>
+              <ol>
+                <li>Работы по импортозамещению.</li>
+                <li>Внедрение новых технологий в производство.</li>
+              </ol>
             </div>
           </div>
         </div>        
       </div>
-    </section>
-    
+      </div>      
+    </section>    
     <section class="prototype">
       <div class="prototype_wrapper">
         <div class="prototype_content">
@@ -236,61 +289,7 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="whywe">
-      <div class="whywe_wrapper">
-        <div class="whywe_content">
-          <h2 class="whywe_title">Отзывы от наших покупателей</h2>
-          <div class="whywe_layout">
-            <div class="whywe_item">
-              <div class="whywe_item_text">
-                <img class="whywe_item_quote" src="assets/svg/quote.svg" alt="" width="30" height="30">
-                <p class="whywe_item_description">ООО "ДИЗЕЛЬАВТО" является нашими стратегическими партнерами по импортозамещению в производстве инклинометров для нефтегазовой добычи. В данных проектах использовались редкие материалы: бериллиевая бронза марки БРБ2 и сталь 06ХН28МДТ. Специалисты ООО "ДИЗЕЛЬАВТО" успешно подобрали материалы, разработали методы термообработки и изготовили продукцию, которая показала отличные результаты на испытаниях. Она ничем не уступала изделиям ведущих европейских и американских производителей. Наше партнерство с ООО "ДИЗЕЛЬАВТО" — залог качества и надежности."</p>
-              </div>              
-              <div class="whywe_who">
-                <div class="who">
-                  <img class="who_image" src="assets/images/serg.png" alt="" width="62" height="62">
-                  <div class="name">
-                    <h4>Николай Николаевич</h4>
-                    <p>Технический Директор</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="whywe_item">
-              <div class="whywe_item_text">
-                <img class="whywe_item_quote" src="assets/svg/quote.svg" alt="" width="30" height="30">
-                <p class="whywe_item_description">"Мы сотрудничаем с компанией ООО «ДизельАвто» уже около четырёх лет в рамках программ импортозамещения и реверс-инжиниринга готовой продукции. За это время компания «ДизельАвто» занималась производством вентиляционных клапанов по нашим чертежам. Также они произвели реверс-инжиниринг палет для наших автоматизированных складов. Их команда продемонстрировала высокий уровень профессионализма, обеспечив высокое качество продукции. Мы ценим наше сотрудничество и рекомендуем ООО «ДизельАвто» как надёжного партнёра для реализации сложных технических проектов."</p>
-              </div>              
-              <div class="whywe_who">
-                <div class="who">
-                  <img class="who_image" src="assets/images/serg.png" alt="" width="62" height="62">
-                  <div class="name">
-                    <h4>Александр Дмитриевич</h4>
-                    <p>Руководитель отдела МТС</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="whywe_item">
-              <div class="whywe_item_text">
-                <img class="whywe_item_quote" src="assets/svg/quote.svg" alt="" width="30" height="30">
-                <p class="whywe_item_description">сюда вставить реальный отзыв из ВК.</p>
-              </div>              
-              <div class="whywe_who">
-                <div class="who">
-                  <img class="who_image" src="assets/images/serg.png" alt="" width="62" height="62">
-                  <div class="name">
-                    <h4>Sergey</h4>
-                    <p>Mechanical Designer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </section>    
     <section class="steps">
       <div class="steps_wrapper">
           <h2 class="steps_title">Изготовление деталей делится на 4 простых этапа:</h2>

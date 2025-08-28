@@ -15,6 +15,14 @@ li {
   padding: 0;
 }
 
+ol li{
+  list-style-type: disc;
+}
+
+ol li::marker{
+  color: #0095da;
+}
+
 a {
   text-decoration: none;
 }
@@ -44,12 +52,35 @@ p {
 
 header {
   width: 100%;
-  height: 70px;
+  height: 100px;
 -webkit-box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
 -moz-box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
 box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
 }
 
+.topper {
+  width: 100%;
+  background-color: #0095da;
+}
+
+.topper_wrapper{    
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 2px;
+}
+
+.topper_contacts{
+  display: flex;
+  justify-content: space-between;
+}
+
+.topper_contacts span{
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
 .header_wrapper {
   margin: 0 auto;
   max-width: 1200px;
@@ -95,10 +126,10 @@ nav {
 }
 
 .nav_link {
-  font-size: 15px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;  
-  text-transform: uppercase;
+  font-family: Barlow, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.52px;
   color: rgb(31, 31, 31);
   cursor: pointer;
 }
@@ -113,7 +144,7 @@ nav {
 
 .slider {
   margin: 0  auto;
-  max-width: 1200px;
+  max-width: 1920px;
 }
 
 .slider_image {
@@ -125,9 +156,19 @@ nav {
   width: 100%;
 }
 
+.about_bg {
+  margin: 0  auto;
+  max-width: 1920px;
+  background-image: url(/TECH/assets/images/new_bg.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
 .about_wrapper {
   margin: 0 auto;
   max-width: 1200px;
+    background-color: white;
+
 }
 
 .about_contetnt {
@@ -145,10 +186,11 @@ nav {
 }
 
 .processing,
-.research {  
+.research { 
+  padding: 25px; 
   margin-top: 50px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   justify-items: center;
   flex-direction: row;
@@ -161,8 +203,8 @@ nav {
 }
 
 .about_img_right {  
-  width: 500px;
-  height: 300px;
+  height: 488px;
+  width: 650px;
   margin-left: 50px;
 }
 
@@ -172,10 +214,18 @@ nav {
   margin-right: 50px;
 }
 
+.about_subtitle{
+  margin-top: 20px;
+}
+
 .about_product {
   display: flex;
   width: 100;
   height: 100%;
+}
+
+.about_text{
+  padding: 30px;
 }
 
 .about_title {
@@ -191,6 +241,8 @@ nav {
 
 .directions {
   width: 100%;
+  background-color: #f6fbff;
+
 }
 
 .directions_wrapper {
@@ -344,7 +396,6 @@ nav {
 
 .trust {
   width: 100%;
-  background-color: #f6fbff;
 }
 
 .trust_wrapper {
@@ -406,6 +457,7 @@ nav {
 
 .whywe {
   width: 100%;
+  background-color: #f6fbff;
 }
 
 .whywe_wrapper {
@@ -473,7 +525,6 @@ nav {
 
 .steps {
   width: 100%;
-  background-color: #f6fbff;
 }
 
 .steps_wrapper{
@@ -744,28 +795,26 @@ footer {
   width: 100%;
   height: 100%;
   max-width: 1920px;
-  max-height: 1200px;
+  max-height: 800px;
 }
 
 
 .slider_item_title {
-  margin-top: -150px;
+  margin-top: -250px;
   margin-bottom: 0;
-  width: 480px;
-  color: #c7c7c7;
-  font-family: Inter;
-  font-style: normal;
+  max-width: 700px;
+  color: #fff;
+  font-family: Roboto, sans-serif;  font-style: normal;
   font-weight: 600;
   line-height: 30px;
   padding: 18px;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .slider_item_description {
-  width: 480px;
-  color: #c7c7c7;
-  font-family: Inter;
-  font-size: 16px;
+  max-width: 880px;
+  color: white;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
