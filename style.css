@@ -33,8 +33,7 @@ h1 {
   font-weight: 500;
   margin: 0;
   padding: 0;
-  color: #565759;
-  text-transform: uppercase;
+  color: #7c7d80;
 }
 
 h2, h3, h4 {
@@ -56,6 +55,86 @@ header {
 -webkit-box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
 -moz-box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
 box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%; /* прямо под хэдером */
+  left: 50%;
+  transform: translateX(-50%) translateY(15px);
+  background: #fff;
+  border-top: 1px solid #0095da;
+  padding: 30px;
+  width: 1140px;
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
+
+.menu:hover .dropdown {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu:hover::after {
+  transform: rotate(225deg);
+}
+
+.drop_item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.drop_link {
+  font-family: Barlow, sans-serif;
+  font-size: 16px;
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.drop_link:hover {
+  color: #0095da;
+}
+
+.drop_wrap{
+  display: flex;
+}
+
+.drop_head{
+  padding: 30px;
+  position: relative;
+}
+
+.drop_title {
+  font-size: 20px;
+}
+
+.drop_head::after{
+  right: 0;
+  top: 30px;
+  position: absolute;
+  content: '';
+  height: 160px;
+  width: 1px;
+background-color: #d0d0d0;
+}
+
+.drop_main {
+  padding: 30px;
+}
+
+.drop_item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.drop_link {
+  font-family: Barlow, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.52px;
+  color: rgb(31, 31, 31);
+  cursor: pointer;
 }
 
 .topper {
@@ -84,9 +163,10 @@ box-shadow: 2px 2px 5px 0px rgba(34, 60, 80, 0.1);
 .header_wrapper {
   margin: 0 auto;
   max-width: 1200px;
+  position: relative;
 }
 
-.header {
+.header_container {
   padding-top: 10px;
   display: flex;
   justify-content: space-between;
@@ -125,13 +205,44 @@ nav {
   justify-content: space-between;
 }
 
+.nav_item {
+  position: relative;
+}
+
 .nav_link {
   font-family: Barlow, sans-serif;
   font-size: 16px;
   font-weight: 600;
-  letter-spacing: 0.52px;
   color: rgb(31, 31, 31);
+  text-decoration: none;
   cursor: pointer;
+  padding: 10px;
+}
+
+.menu {
+  position: relative;
+}
+
+.menu::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  margin-left: 8px;
+  border-width: 0 3px 3px 0;
+  border-style: solid;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  padding: 2px;
+  transform: rotate(45deg);
+  transition: transform .3s linear;
+}
+
+.menu:hover ~ .dropdown {
+  display: flex;
+}
+
+.menu:hover::after {
+  transform: rotate(225deg);
 }
 
 .fast {
