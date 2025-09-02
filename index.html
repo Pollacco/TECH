@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <title>ООО "Дизельавто"</title>
 </head>
 <body>
@@ -148,56 +150,81 @@
     </section>
 
   
-    <section class="about">
-      <div class="about_bg">
-        <div class="about_wrapper">
-        <div class="about_contetnt">
-          <h2 class="about_title">Производство и НИОКР</h2>
-          <div class="about_product">
-            <div class="processing">
-              <div class="process_main">
-                <p class="about_description">ООО «Дизельавто» выполняет механическую обработку металлов и пластмасс, проводит научно-исследовательские и опытно-конструкторские работы (НИОКР), а также работы с применением технологий 3D-печати и 3D-сканирования.</p>
-              <h3 class="about_subtitle">Механическая обработка</h3>
-              <ol>
-                <li><strong>Токарная обработка:</strong> цилиндрические и конические поверхности, нарезка наружной и внутренней резьбы, сверление, развертывание отверстий; максимальный диаметр — 250 мм, максимальная длина — 1500 мм.</li>
-                <li><strong>Фрезерная обработка:</strong> плоские, ступенчатые, угловые и фасонные поверхности, канавки, пазы, шлицы, фаски, нарезка зубчатых колёс, сверление и растачивание отверстий.</li>
-                <li><strong>Электроэрозионная обработка:</strong> высокоточная обработка сложнопрофильных деталей.</li>
-                <li><strong>Обработка пластмасс:</strong> токарная и фрезерная обработка изделий из технических пластиков (ПОМ, ПТФЭ, ПЭ, ПА и др.).</li>
-              </ol>
-              </div>              
-              <div class="about_img_right"><img class="about_product" src="assets/images/prossesing.jpg" alt=""></div>              
-            </div>
-            <div class="about_text">
-              <h3 class="about_subtitle">Аддитивные технологии</h3>
-              <ol>
-                <li><strong>3D-печать:</strong> изготовление деталей из пластика (PLA, ABS, PETG, нейлон, композитные материалы) методом FDM и SLA; размеры печати — до 300×300×400 мм.</li>
-                <li><strong>3D-сканирование:</strong> цифровизация изделий с точностью до 0,05 мм для последующего реверс-инжиниринга или контроля качества.</li>
-              </ol>
-              <h3 class="about_subtitle">НИОКР</h3>
-              <ol>
-                <li>Разработка конструкторской документации для новых изделий.</li>
-                <li>Модернизация существующих изделий.</li>
-                <li>Реверс-инжиниринг.</li>
-                <li>Разработка технологической документации.</li>
-                <li>Подбор материалов и инструмента.</li>
-              </ol>
-              <h3 class="about_subtitle">Виды производства</h3>
-                <ol>
-                  <li>Единичное.</li>
-                  <li>Опытно-серийное.</li>
-                  <li>Серийное.</li>
-                </ol>
-              <h3 class="about_subtitle">Дополнительные направления</h3>
-              <ol>
-                <li>Работы по импортозамещению.</li>
-                <li>Внедрение новых технологий в производство.</li>
-              </ol>
-            </div>
-          </div>
-        </div>        
+    <!-- About Section -->
+<section class="about" id="about">
+  <div class="about_bg">
+    <div class="about-container">
+    
+      <h2 class="about-title">Производство и НИОКР</h2>
+
+    <div class="about-content">
+
+      <!-- Левая колонка: текст -->
+      <div class="about-text">
+        <p class="about-description">
+          ООО «Дизельавто» выполняет механическую обработку металлов и пластмасс, проводит научно-исследовательские и опытно-конструкторские работы (НИОКР), а также работы с применением технологий 3D-печати и 3D-сканирования.
+        </p>
+
+        <div class="about-section">
+          <h3 class="about-subtitle"><i class="fas fa-cogs"></i> Механическая обработка</h3>
+          <ul>
+            <li><strong>Токарная обработка:</strong> цилиндрические и конические поверхности, резьбы, сверление (Ø до 250 мм, длина до 1500 мм).</li>
+            <li><strong>Фрезерная обработка:</strong> поверхности, канавки, шлицы, зубчатые колёса, сверление и расточка.</li>
+            <li><strong>Электроэрозионная обработка:</strong> сложнопрофильные детали высокой точности.</li>
+            <li><strong>Обработка пластмасс:</strong> ПОМ, ПТФЭ, ПЭ, ПА и др.</li>
+          </ul>
+        </div>
+
+        <div class="about-section">
+          <h3 class="about-subtitle"><i class="fas fa-cube"></i> Аддитивные технологии</h3>
+          <ul>
+            <li><strong>3D-печать:</strong> PLA, ABS, PETG, нейлон, композиты (FDM и SLA, до 300×300×400 мм).</li>
+            <li><strong>3D-сканирование:</strong> точность до 0,05 мм для реверс-инжиниринга и контроля качества.</li>
+          </ul>
+        </div>
+        
+        
       </div>
-      </div>      
-    </section>    
+
+      <!-- Правая колонка: картинка -->
+      <div class="about-image">
+        <img src="assets/images/milling.jpg" alt="Производство Дизельавто">
+      </div>
+    </div>
+    <div class="table">
+          <div class="about-section">
+          <h3 class="about-subtitle"><i class="fas fa-flask"></i> НИОКР</h3>
+          <ul>
+            <li>Разработка конструкторской документации.</li>
+            <li>Модернизация изделий.</li>
+            <li>Реверс-инжиниринг.</li>
+            <li>Разработка технологической документации.</li>
+            <li>Подбор материалов и инструмента.</li>
+          </ul>
+        </div>
+
+        <div class="about-section">
+          <h3 class="about-subtitle"><i class="fas fa-industry"></i> Виды производства</h3>
+          <ul>
+            <li>Единичное.</li>
+            <li>Опытно-серийное.</li>
+            <li>Серийное.</li>
+          </ul>
+        </div>
+
+        <div class="about-section">
+          <h3 class="about-subtitle"><i class="fas fa-lightbulb"></i> Дополнительные направления</h3>
+          <ul>
+            <li>Импортозамещение.</li>
+            <li>Внедрение новых технологий в производство.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
     <section class="prototype">
       <div class="prototype_wrapper">
         <div class="prototype_content">
