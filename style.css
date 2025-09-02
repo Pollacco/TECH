@@ -274,7 +274,6 @@ header {
   margin: 0 auto;
   background-color: #fff;
   padding: 0 30px;
-  opacity: 0.8;
 }
 
 .about-content {
@@ -437,74 +436,87 @@ header {
   margin-bottom: 50px;
   text-align: justify;
 }
-
+/* ===== PROTOTYPE ===== */
 .prototype {
-  width: 100%;
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
 }
 
 .prototype_wrapper {
-  margin: 0 auto;
   max-width: 1200px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.prototype_content {
+.prototype_title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #1f1f1f;
+}
+
+.prototype_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prototype_card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: left;
+  padding: 20px;
 }
 
-.prot_item {
-  margin-top: 50px;
-  display: flex;
-  justify-content: space-between;
+.prototype h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+.prototype_card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #0095da;
+}
+.prototype_card p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
 }
 
-.prot_image_cont {
-  max-width: 550px;
+.prototype_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
 
-.prot_image {
+.prototype_card img {
   width: 100%;
-  border-radius: 20px;
-}
-
-.prot_description {
-  margin-left: 50px;
-  max-width: 550px;
-  border-radius: 20px;
-}
-
-.serial_cont {
-  margin-top: 10px;
-}
-
-.prot_title {
-  font-size: 25px;
+  height: auto;
+  object-fit: contain;
   margin-bottom: 15px;
 }
 
-.prot_text {
-  text-align: justify;
-  color: #666666 ;
-}
-
-.prot_subtitle {
-  margin-top: 20px;
+.prototype_subtitle {
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 10px;
+  color: #0095da;
 }
 
-.material_value {
-  margin-left: 23px;
+.prototype_text {
   font-size: 16px;
-  color: #666666 ;
-}
-
-.serial_value {
-  margin-left: 10px;
-  font-size: 16px;
-  color: #666666 ;
+  line-height: 1.5;
+  color: #333;
 }
 
 .trust {
@@ -922,4 +934,63 @@ footer {
   .caption { padding: 10px 16px; }
   .caption h2 { font-size: 18px; }
   .caption p { font-size: 12px; }
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+  }
+  .table{
+    flex-direction: column;
+  }
+  .about-image {
+    order: -1;
+  }
+  .about-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 26px;
+  }
+  .about-subtitle {
+    font-size: 18px;
+  }
+}
+
+/* ===== Адаптив ===== */
+@media (max-width: 992px) {
+  .prototype_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .prototype_card h3 {
+    font-size: 18px;
+  }
+
+  .prototype_card p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .prototype_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prototype_card {
+    padding: 15px;
+  }
+
+  .prototype_card h3 {
+    font-size: 16px;
+  }
+
+  .prototype_card p {
+    font-size: 14px;
+  }
 }
