@@ -159,70 +159,88 @@ header {
 }
 .mobile_has_sub.open .mobile_sublist { max-height: 400px; }
 
-
 /* ===== SLIDER ===== */
 .slider {
   position: relative;
-  max-width: 1920px;
-  height: 700px;
-  margin: 0 auto;
+  width: 100%;
+  height: 700px; /* фиксированная высота */
   overflow: hidden;
 }
-.slides { height: 100%; position: relative; }
-.slide {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
 }
-.slide.active { opacity: 1; z-index: 1; }
+
+.slide {
+  flex: 0 0 100%;   /* фикс ширина слайда */
+  height: 100%;
+  position: relative;
+}
+
 .slide img {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-.slide-text {
+
+.caption {
   position: absolute;
-  bottom: 15%;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(0,0,0,0.5);
   color: #fff;
-  padding: 20px 40px;
-  border-radius: 5px;
-  text-align: center;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 500;
 }
-.slide-text h2 { font-size: 36px; }
 
-/* SLIDER arrows + dots */
-.arrow {
+/* Стрелки */
+.slider button.prev,
+.slider button.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 40px;
-  background: rgba(0,0,0,0.5);
-  border: none; color: #fff;
+  background: rgba(0,0,0,0.2);
+  border: none;
+  color: #fff;
+  font-size: 32px;
+  padding: 12px;
   cursor: pointer;
-  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
-.arrow.prev { left: 20px; }
-.arrow.next { right: 20px; }
+.slider button.prev:hover,
+.slider button.next:hover {
+  background: rgba(0,0,0,0.6);
+}
+.slider button.prev { left: 20px; }
+.slider button.next { right: 20px; }
 
+/* Точки */
 .dots {
   position: absolute;
-  bottom: 25px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex; gap: 10px;
+  display: flex;
+  gap: 10px;
 }
-.dots button {
-  width: 12px; height: 12px;
+.dots span {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  border: none;
   background: rgba(255,255,255,0.6);
   cursor: pointer;
+  transition: background 0.3s;
 }
-.dots button.active { background: #0095da; }
+.dots span.active {
+  background: #0095da;
+}
 
 
 .about {
@@ -848,105 +866,6 @@ footer {
   font-style: italic;
 }
 
-.slider_container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.slider_item {
-  display: flex;
-  flex-direction: column;
-}
-
-.slider_item_image {
-  display: flex;
-}
-
-.slider_item_image img{
-  width: 100%;
-  height: 100%;
-  max-width: 1920px;
-  max-height: 800px;
-}
-
-
-.slider_item_title {
-  margin-top: -250px;
-  margin-bottom: 0;
-  max-width: 700px;
-  color: #fff;
-  font-family: Roboto, sans-serif;  font-style: normal;
-  font-weight: 600;
-  line-height: 30px;
-  padding: 18px;
-  font-size: 32px;
-}
-
-.slider_item_description {
-  max-width: 880px;
-  color: white;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  padding: 18px;
-}
-
-.slider_navigation {
-  display: none;
-  margin-top: 40px;
-  justify-content: center;
-}
-
-.slider_nav_item {
-  width: 40px;
-  height: 4px;
-  border-radius: 100px;
-  background:#C1B6AD;
-}
-
-.left_arrow{
-  position: absolute;
-  left: 0;
-  top: calc(50%-35px);
-  z-index: 1;
-}
-
-.right_arrow {
-  position: absolute;
-  right: 0;
-  top: calc(50%-35px);
-}
-
-.left_arrow,
-.right_arrow {
-  cursor: pointer;
-}
-
-svg #left_arrow,
-svg #left_round,
-svg #right_round,
-svg #right_arrow {
-  transition: 500ms;
-  transition-timing-function: ease-in-out;
-}
-
-svg:hover #left_round,
-svg:hover #right_round {
-  fill: #665F55
-}
-
-svg:hover #left_arrow,
-svg:hover #right_arrow  {    
-  stroke: #C1B6AD;
-}
-
-.active_item {
-  background: #665F55;
-}
-
 
 /* ===== АДАПТИВ ДЛЯ DROPDOWN ===== */
 /* ===== ADAPTIVE ===== */
@@ -965,4 +884,20 @@ svg:hover #right_arrow  {
   .ask_question { display: none; }
   .header_burger_menu { display: flex; }
   .dropdown { display: none !important; }
+}
+
+/* Адаптив */
+@media (max-width: 1024px) {
+  .slider { height: 500px; }
+  .caption { font-size: 18px; padding: 10px 20px; }
+}
+@media (max-width: 768px) {
+  .slider { height: 350px; }
+  .caption { font-size: 16px; bottom: 20px; }
+  .slider button.prev,
+  .slider button.next { font-size: 24px; padding: 8px; }
+}
+@media (max-width: 480px) {
+  .slider { height: 250px; }
+  .caption { font-size: 14px; padding: 8px 16px; }
 }
